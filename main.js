@@ -23,3 +23,9 @@ function generateEmail() {
         })
     }
 }
+generateEmail()
+//creazione della funzione inerente al bottone per il refresh delle mail
+buttonEl.addEventListener("click", function () {
+    emailListEl.innerHTML = ""
+    generateEmail()
+})
